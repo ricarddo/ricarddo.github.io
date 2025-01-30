@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ricardo Martins - Personal Portfolio</title>
+
+  <!--
+    - emailjs
+  -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  <!--
+    - jQuery link
+  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!--
+    - toastr link
+  -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/jason-memoji-nobg.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar-5-removebg.png" alt="Ricardo Martins" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Ricardo Martins">Ricardo Martins</h1>
+
+          <p class="title">IT Architecture Manager</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:ricarddo@gmail.com" class="contact-link">ricarddo@xxxxx.xxxx  </a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+61404428578" class="contact-link">+55 (11) 981xx-xxxx  </a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>SP, São Paulo, Brasil</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/ricarddo" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/ricarddo/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          
+          <li class="social-item">
+            <a href="https://medium.com/@ricarddo" class="social-link" target="_blank">
+              <ion-icon name="logo-medium"></ion-icon>
+            </a>
+          </li>
+          
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certifications</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skills</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">👨🏻‍💻 Hello!</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Ricardo, a passionate and experienced IT Architecture now working as a IT Architecture Manager at SKY in Brazil, 
+            Specializing in Software Architecture and Systems Engineering, I bring a robust background / knowlege of tools, 
+            languages and tecnologies, honed through Media and Telco challengers industry projects. 
+          </p>
+
+          <p>
+            My drive for tech stems from crafting software solutions that create a tangible impact on real-world problems. 
+            Facilitating this process is my ability to excel in a collaborative environment, where diverse perspectives 
+            come together to innovate. 
+          </p>
+
+          <p>
+            Outside of work, dad of twins boys I enjoy staying active with my little boys, 
+            playing on the courts (tenis or futebol). I'm always eager to connect with 
+            like-minded professionals and discuss ideas that push boundaries.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icons8-study-50.png
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Studying</h4>
+
+                <p class="service-item-text">
+                  As a computer science enthusiast, I immerse myself in the dynamic world of algorithms, data structures, and software engineering principles to continuously enhance my skills and understanding.                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icons8-web-50.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  Through my personal web development projects, I showcase my creativity and proficiency in front-end and back-end technologies, crafting seamless and user-centric digital experiences.                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icons8-machine-learning-50.png" alt="ml icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning</h4>
+
+                <p class="service-item-text">
+                  Leveraging cutting-edge API models and algorithms, I delve into the realm of machine learning, exploring its potential to revolutionize industries and solve complex problems with data-driven insights.                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icons8-soccer-50.png" alt="soccer icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Competetive Sports</h4>
+
+                <p class="service-item-text">
+                  I thrive on embracing physical challenges. Competing competitively in sports such as Soccer and Badminton is integral to my character, and brings both joy and enrichment to my life.                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-gen-1.png" alt="Rafael Souza" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Rafael Souza</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                      Ricardo has strong technical background, excelent architectural insights and is very experienced about some lines of business, which enables him to design good cost-benefit and resilient architectures envisioning long-term state. <br>
+
+                      He performs as a top level architect and possesses good communication skills to propose valueable ideas since technical staff up to C-level. Lead and drive solutions to reach expected business outcomes. <br>
+
+                      I can certainly recommend him to a senior level Lead Architect position confident he is going to be a high performer. 
+                  </p>
+                </div>
+
+              </div>
+            </li>
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-gen-1.png" alt="Guaracy Mendes" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Guaracy Mendes</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                      Ricardo is a high standard in competency, integrity and friendship. <br> Besides his technical expertise and great professional experience, his wisdom and sense of humor alleviate difficult corporate situations, while keeping in track of business strategy and goals. 
+                  </p>
+                </div>
+
+              </div>
+            </li>   
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-gen-1.png" alt="Andre Nazare" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Andre Nazare</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I was able to see right from the beginning the intelligence, professionalism and problem solving capabilities Ricardo brought to the team. <br> As project leader, developer and architect, he's able to both mentor a team and provide the high-level insight that can only be achieved with exposure to a broad range of experiences. He is consistently committed to do whatever was necessary to get the job done right, at the right time.
+                  </p>
+                </div>
+
+              </div>
+            </li>            
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-gen-1.png" alt="Alexandre Milhoranza" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Alexandre Milhoranza</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                      Ricardo always was a great manager and supervisor. I'm glad to have had worked with him 3 times in two different companies. <br> Ricardo is a man who don't matter to share your knowledge with people and he's always ready to offer your skill to help everybody.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+            
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-gen-1.png" alt= "Jose Modes" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jose Modes</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Ricardo is a focused by results and he has strong backgroung in what he does. <br> He is creative, always looking for new ways to achieve the objectives and dates. <br> He works very well under pressure and even when pushed to accomplish agressive dates.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Worked with</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://www.sky.com.br/" target="_blank">
+                <img src="./assets/images/sky.jpeg" alt="SKY Brazil">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.prodesp.sp.gov.br/" target="_blank">
+                <img src="./assets/images/prodesp.jpeg" alt="PRODESP - CIA de Processamento de Dados do Estado de São Paulo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://stefanini.com/pt-br" target="_blank">
+                <img src="./assets/images/stefanini_brasil_logo.jpeg" alt="Stefanini">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.claro.com.br/" target="_blank">
+                <img src="./assets/images/net.jpeg" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="https://www.tcs.com/" target="_blank">
+                <img src="./assets/images/tata_consultancy_services_logo.jpeg" alt="Tata Consultancy Services">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="http://www.directv.com/" target="_blank">
+                <img src="./assets/images/directvla_logo.jpeg" alt="DIRECTV Latin America">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="http://www.sbt.com.br/" target="_blank">
+                <img src="./assets/images/sbt_logo.jpeg" alt="SBT">
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">📝 Resume</h2>
+        </header>
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4">SKY Brasil</h4>
+              <h5 class="h5 timeline-item-title">IT Architecture Manager</h5>
+
+              <span>Apr 2021 - Present</span>
+
+              <p class="timeline-text">
+                - IT Architecture Manager responsible for solutions, data, and infrastructure <br>
+                - Modernization of integration architecture to microservices with TM Forum OpenAPI standards and containerized K8S environments <br>
+                - Strategic migration to Oracle Cloud with SaaS, PaaS, and IaaS implementations <br>
+                - Production of technical and non-technical architectural presentations and materials <br>
+                - Standardize and reduce developments efforts using BPM Tools (such as Camunda BPM) for microservices orchestration <br>
+                - Involvement in company's strategic projects <br>
+                - Evaluate solutions for make or buy scenarios <br>
+                - Architecture design for complex, distributed, and heterogeneous cloud and on-premises environments <br>
+                - Definition of microservices reference architecture based on OpenAPI native framework <br>
+                - Promotion of personal development and skills among architects <br>
+                - Active communication with project key stakeholders to promote the needs and benefits of defined governance, standards, and reference architectures<br>
+              </p>
+              <h5 class="h5 timeline-item-title">IT Architecture Supervisor</h5>
+
+              <span>May 2019 - Apr 2021</span>
+              <h5 class="h5 timeline-item-title">IT Architecture Specialist</h5>
+
+              <span>Sep 2011 - May 2019</span>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4">PRODESP (Cia de Processamento de Dados do Estado de São Paulo)</h4>
+              <h5 class="h5 timeline-item-title">Software Engineer</h5>
+
+              <span>Fev 2021 - Sep 2021</span>
+
+              <p class="timeline-text">
+                - Requirements analysis and definition of physical and logical architecture to meet the needs of the São Paulo Fire Department in technical inspections  <br>
+                - Business modeling techniques with DDD <br>
+                - Support and creation of resources for the project team <br>
+                - Hands-on development in ASP.NET, .NET 4, jQuery, EF, Repositories, WCF, Sql Server <br>
+                - Generation and implementation of releases in the client environment <br>
+                - Suggestions for improving the software development cycle to increase productivity and quality <br>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4">Stefanini</h4>
+              <h5 class="h5 timeline-item-title">Sr .NET Plataform Consultant</h5>
+
+              <span>Jan 2010 - Feb 2011</span>
+
+              <p class="timeline-text">
+                - Analysis and design with Domain Driven Design and Agile methodologies <br>
+                - Practical development in ASP.NET MVC, WCF, WebForms, jQuery, nHibernate, and repository patterns using TDD <br>
+                - Support for partners in configuring back-end and front-end in IIS WebFarm <br>
+                - Deployment, testing, and troubleshooting in client and development environments <br>
+                - Automation of the application build and deployment process for IIS 7.5 and Sql Server 2008 <br>
+                - Configuration of network load balancing for Windows Server 2008 R2 using Hyper-V, NBL-Services, and AppFabric <br>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4">Zuri - WebFoundations</h4>
+              <h5 class="h5 timeline-item-title">SR .NET Architect</h5>
+
+              <span>Sep 2009 - Jan 2010</span>
+
+              <p class="timeline-text">
+                - Analysis and troubleshooting of performance issues in complex applications using the .NET platform <br>
+                - Definition and implementation of caching strategies to improve application performance <br>
+                - Definition and implementation of .NET architecture patterns <br>
+                - Load and stress testing of .NET web applications using MS TST and JMeter <br>
+                - Mentoring and technical assistance to team members <br>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4">NET Serviços - Claro Brasil</h4>
+              <h5 class="h5 timeline-item-title">B2C Digital Channels Coordinator</h5>
+
+              <span>May 2008 - Aug 2009</span>
+
+              <p class="timeline-text">
+                - Coordination of integration of new B2C strategies and digital services  <br>
+                - Design of the new B2C Self-Service Portal with product sales, issue management, and various functionalities to reduce support requests  <br>
+                - Coordination of the portal's evolution roadmap, issue resolution, activities, priorities, and controls  <br>
+                - Tools and technologies used: WebLogic Server 10.2, WebLogic Portal 10.2, RedHat Linux 5, Apache, Pageflows, Java J2EE, JSP, Struts, C#, Visual Studio 2008, CVS, Oracle 10g/9i, SQL Server 2008, SharePoint Services, HP Project Portfolio Management, Ms Project  <br>
+              </p>
+
+            </li>
+          </ol>
+
+        </section>
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 ">Universidade Paulista</h4>
+
+              <span>2022-2023</span>
+
+              <p class="timeline-text">
+                Graduate Degree - Information Technology for Business Strategies
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 ">Universidade Paulista</h4>
+
+              <span>2021-2022</span>
+
+              <p class="timeline-text">
+                Graduate Degree - Information Technology Governance and Management 
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 ">Instituto de Gestão e Tecnologia da Informação</h4>
+
+              <span>2017-2019</span>
+
+              <p class="timeline-text">
+                Graduate Degree - Software Architecture 
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 ">Universidade São Marcos</h4>
+
+              <span>1999-2003</span>
+
+              <p class="timeline-text">
+                Degree - Computer Science
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+  <!--
+     <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="80">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+      -->
+      </article>
+
+
+      <!--
+        - #CERTIFICATIONS
+      -->
+
+      <article class="resume" data-page="certifications">
+
+        <header>
+          <h2 class="h2 article-title">🥇 Certifications</h2>
+        </header>
+        <section class="timeline">
+      <!--
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Certifications</h3>
+          </div>
+      -->
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4">AWS Cloud Quest: Cloud Practitioner (renew)</h4>
+              <span>Camunda - Nov 2024</span>              
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Camunda Platform for Java Developers</h4>
+              <span>Camunda - Nov 2023</span>              
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">BPMN Overview</h4>
+              <span>Camunda - Jan 2023</span>              
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Camunda BPMN 2.0</h4>
+              <span>Camunda - Aug 2022</span>              
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Camunda DMN (Decision Model and Notation)</h4>
+              <span>Camunda - Jul 2022</span>              
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">IBM Building Cloud-Native and Multicloud Applications</h4>
+              <span>IBM - Jul 2022</span>              
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">AWS Certified Cloud Practitioner</h4>
+              <span>AWS - Jun 2022</span>  
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Camunda 8 - Platform Overview</h4>
+              <span>Camunda - May 2022</span>              
+            </li>
+             <li class="timeline-item">
+              <h4 class="h4">Camunda Platform Foundation</h4>
+              <span>Camunda - May 2022</span>  
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Digital Advertising Fundamentals</h4>
+              <span>Microsoft - Sep 2021</span>              
+            </li>
+             <li class="timeline-item">
+              <h4 class="h4">Fundamentos Na Lei Geral De Proteção De Dados - LGPDF™</h4>
+              <span>Certiprof - Oct 2021</span>  
+             </li>
+            <li class="timeline-item">
+              <h4 class="h4">LeanIX Certified Enterprise Architecture Associate</h4>
+              <span>SAP LeanIX - Oct 2021</span>              
+            </li>              
+            <li class="timeline-item">
+              <h4 class="h4">LeanIX Certified Enterprise Architecture Practitioner</h4>
+              <span>SAP LeanIX - Sep 2021</span>              
+            </li>                       
+            <li class="timeline-item">
+              <h4 class="h4">Oracle Cloud Infrastructure Developer 2021 Certified Associate</h4>
+              <span>Oracle - Oct 2021</span>  
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Oracle Cloud Infrastructure Foundations 2021 Associate</h4>
+              <span>Microsoft - Sep 2021</span>              
+            </li>           
+            <li class="timeline-item">
+              <h4 class="h4">Oracle Cloud Infrastructure 2019 Cloud Operations Certified Associate</h4>
+              <span>Oracle - Aug 2020</span>  
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Microsoft Certified Azure Fundamentals</h4>
+              <span>Microsoft - Jul 2020</span>              
+            </li>
+             <li class="timeline-item">
+              <h4 class="h4">Oracle Cloud Infrastructure 2019 Certified Architect Professional</h4>
+              <span>Oracle - Jul 2020</span>
+            </li>     
+            <li class="timeline-item">
+              <h4 class="h4">Oracle Autonomous Database Cloud 2019 Certified Specialist</h4>
+              <span>Oracle - May 2020</span>  
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Oracle Cloud Infrastructure Developer 2020 Certified Associate</h4>
+              <span>Oracle - May 2020</span>              
+            </li>
+             <li class="timeline-item">
+              <h4 class="h4">Oracle Cloud Infrastructure 2019 Architect Associate</h4>
+              <span>Oracle - Apr 2020</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Oracle Cloud Infrastructure Foundations 2020 Certified Associate</h4>
+              <span>Oracle - Apr 2020</span>              
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">MongoDB Basics</h4>
+              <span>MongoDB - Fev 2020</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Yellow Belt Certification</h4>
+              <span>6 Sigma Study - Jan 2020</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">White Belt Certification</h4>
+              <span>Six Sigma - Jan 2020</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Bot Developer</h4>
+              <span>Automation Anywhere - Jun 2019</span>              
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">DEPC - DevOps Essentials Professional Cetificate</h4>
+              <span>Certprof - Jan 2019</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">PSM - Professional Scrum Master™ </h4>
+              <span>scrum.org - Mar 2018</span>              
+            </li>            
+            <li class="timeline-item">
+              <h4 class="h4">MCP - Microsoft Certified Professional</h4>
+              <span>Microsoft - Apr 2012</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">MCTS - Microsoft Certified Technology Specialist</h4>
+              <span>Microsoft - Jul 2011</span>              
+            </li>
+
+          </ol>
+
+        </section>
+        <header>
+          <h2 class="h2 article-title">🙇🏻‍♂️ Courses</h2>
+        </header>
+        <section class="timeline">
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4">AWS Cloud Quest: Cloud Practitioner (renew)</h4>
+              <span>Camunda - Nov 2024</span>              
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Camunda Platform for Java Developers</h4>
+              <span>Camunda - Nov 2023</span>              
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">BPMN Overview</h4>
+              <span>Camunda - Jan 2023</span>              
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Camunda BPMN 2.0</h4>
+              <span>Camunda - Aug 2022</span>              
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Camunda DMN (Decision Model and Notation)</h4>
+              <span>Camunda - Jul 2022</span>              
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">IBM Building Cloud-Native and Multicloud Applications</h4>
+              <span>IBM - Jul 2022</span>              
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">AWS Certified Cloud Practitioner</h4>
+              <span>AWS - Jun 2022</span>  
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Camunda 8 - Platform Overview</h4>
+              <span>Camunda - May 2022</span>              
+            </li>
+             <li class="timeline-item">
+              <h4 class="h4">Camunda Platform Foundation</h4>
+              <span>Camunda - May 2022</span>  
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Digital Advertising Fundamentals</h4>
+              <span>Microsoft - Sep 2021</span>              
+            </li>
+             <li class="timeline-item">
+              <h4 class="h4">Fundamentos Na Lei Geral De Proteção De Dados - LGPDF™</h4>
+              <span>Certiprof - Oct 2021</span>  
+             </li>
+            <li class="timeline-item">
+              <h4 class="h4">LeanIX Certified Enterprise Architecture Associate</h4>
+              <span>SAP LeanIX - Oct 2021</span>              
+            </li>              
+            <li class="timeline-item">
+              <h4 class="h4">LeanIX Certified Enterprise Architecture Practitioner</h4>
+              <span>SAP LeanIX - Sep 2021</span>              
+            </li>                       
+            <li class="timeline-item">
+              <h4 class="h4">Oracle Cloud Infrastructure Developer 2021 Certified Associate</h4>
+              <span>Oracle - Oct 2021</span>  
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Oracle Cloud Infrastructure Foundations 2021 Associate</h4>
+              <span>Microsoft - Sep 2021</span>              
+            </li>           
+            <li class="timeline-item">
+              <h4 class="h4">Oracle Cloud Infrastructure 2019 Cloud Operations Certified Associate</h4>
+              <span>Oracle - Aug 2020</span>  
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Microsoft Certified Azure Fundamentals</h4>
+              <span>Microsoft - Jul 2020</span>              
+            </li>
+             <li class="timeline-item">
+              <h4 class="h4">Oracle Cloud Infrastructure 2019 Certified Architect Professional</h4>
+              <span>Oracle - Jul 2020</span>
+            </li>     
+            <li class="timeline-item">
+              <h4 class="h4">Oracle Autonomous Database Cloud 2019 Certified Specialist</h4>
+              <span>Oracle - May 2020</span>  
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Oracle Cloud Infrastructure Developer 2020 Certified Associate</h4>
+              <span>Oracle - May 2020</span>              
+            </li>
+             <li class="timeline-item">
+              <h4 class="h4">Oracle Cloud Infrastructure 2019 Architect Associate</h4>
+              <span>Oracle - Apr 2020</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Oracle Cloud Infrastructure Foundations 2020 Certified Associate</h4>
+              <span>Oracle - Apr 2020</span>              
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">MongoDB Basics</h4>
+              <span>MongoDB - Fev 2020</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Yellow Belt Certification</h4>
+              <span>6 Sigma Study - Jan 2020</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">White Belt Certification</h4>
+              <span>Six Sigma - Jan 2020</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">Bot Developer</h4>
+              <span>Automation Anywhere - Jun 2019</span>              
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">DEPC - DevOps Essentials Professional Cetificate</h4>
+              <span>Certprof - Jan 2019</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">PSM - Professional Scrum Master™ </h4>
+              <span>scrum.org - Mar 2018</span>              
+            </li>            
+            <li class="timeline-item">
+              <h4 class="h4">MCP - Microsoft Certified Professional</h4>
+              <span>Microsoft - Apr 2012</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4">MCTS - Microsoft Certified Technology Specialist</h4>
+              <span>Microsoft - Jul 2011</span>              
+            </li>
+
+          </ol>
+
+        </section>
+      </article>
+
+
+      
+<!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="skills">
+
+        <header>
+          <h2 class="h2 article-title">📚 Skills</h2>
+        </header>
+
+        <section class="skills">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Back-end development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Integration</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Cool Tech</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Back-end development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-filter-btn>Integration</button>
+              </li>
+
+              <li class="select-item">
+                <button data-filter-btn>Cool Tech</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+                <div class="title-wrapper">
+                  <h5 class="h5">ASP.NET MVC</h5>
+                  <data value="90" style="color: #fff; font-size: 12px;">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%;"></div>
+                </div>              
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+                <div class="title-wrapper">
+                  <h5 class="h5">ASP.NET WebForms</h5>
+                  <data value="95" style="color: #fff; font-size: 12px;">95%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 95%;"></div>
+                </div>              
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+                <div class="title-wrapper">
+                  <h5 class="h5">HTML</h5>
+                  <data value="70" style="color: #fff; font-size: 12px;">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>              
+            </li> 
+            <li class="project-item  active" data-filter-item data-category="web development">
+                <div class="title-wrapper">
+                  <h5 class="h5">JavaScript</h5>
+                  <data value="60" style="color: #fff; font-size: 12px;">60%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%;"></div>
+                </div>              
+            </li> 
+            <li class="project-item  active" data-filter-item data-category="web development">
+                <div class="title-wrapper">
+                  <h5 class="h5">CSS</h5>
+                  <data value="40" style="color: #fff; font-size: 12px;">40%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 40%;"></div>
+                </div>              
+            </li>             
+            <li class="project-item  active" data-filter-item data-category="back-end development">
+                <div class="title-wrapper">
+                  <h5 class="h5">JAVA</h5>
+                  <data value="70" style="color: #fff; font-size: 12px;">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>              
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="integration">
+                <div class="title-wrapper">
+                  <h5 class="h5">Oracle Service Bus</h5>
+                  <data value="70" style="color: #fff; font-size: 12px;">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>              
+            </li>
+            <li class="project-item  active" data-filter-item data-category="integration">
+                <div class="title-wrapper">
+                  <h5 class="h5">Oracle SOA Suite</h5>
+                  <data value="70" style="color: #fff; font-size: 12px;">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>              
+            </li>
+            <li class="project-item  active" data-filter-item data-category="integration">
+                <div class="title-wrapper">
+                  <h5 class="h5">Kong API Gateway</h5>
+                  <data value="80" style="color: #fff; font-size: 12px;">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%;"></div>
+                </div>              
+            </li> 
+
+            <li class="project-item  active" data-filter-item data-category="integration">
+                <div class="title-wrapper">
+                  <h5 class="h5">Oracle Integration Cloud</h5>
+                  <data value="30" style="color: #fff; font-size: 12px;">30%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 30%;"></div>
+                </div>              
+            </li> 
+
+            <li class="project-item  active" data-filter-item data-category="integration">
+                <div class="title-wrapper">
+                  <h5 class="h5">JMS</h5>
+                  <data value="90" style="color: #fff; font-size: 12px;">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width:90%;"></div>
+                </div>              
+            </li> 
+            <li class="project-item  active" data-filter-item data-category="integration">
+                <div class="title-wrapper">
+                  <h5 class="h5">RabbitMQ</h5>
+                  <data value="70" style="color: #fff; font-size: 12px;">70%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width:70%;"></div>
+                </div>              
+            </li>             
+            <li class="project-item  active" data-filter-item data-category="integration">
+                <div class="title-wrapper">
+                  <h5 class="h5">Kubernetes</h5>
+                  <data value="45" style="color: #fff; font-size: 12px;">45%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 45%;"></div>
+                </div>              
+            </li> 
+            
+            <li class="project-item  active" data-filter-item data-category="back-end development">
+                <h3 class="project-title">C#</h3>
+                <p class="project-category">Back-end development</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="back-end development">
+                <h3 class="project-title">NodeJs</h3>
+                <p class="project-category">Back-end development</p>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="web development">
+                <h3 class="project-title">Portfolio Website</h3>
+                <p class="project-category">Web design</p>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="cool tech">
+                <h3 class="project-title">MealBot</h3>
+                <p class="project-category">Cool Tech</p>
+            </li>
+          </ul>
+        </section>
+
+      </article>
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">✉️ Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11180.766400272863!2d-46.71811032440005!3d-23.63670621326746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce511c0fe5fcff%3A0xee8443b11cedd933!2sVila%20Cruzeiro%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1738158404548!5m2!1spt-BR!2sbr"
+            width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action = "javascript:void(0);" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="from_name" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="from_email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
